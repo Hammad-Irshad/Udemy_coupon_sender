@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "code runner",
+    "builds": [
+       { "src": "code_runner.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+       { "src": "/(.*)", "dest": "/code_runner.js" }
+    ]
+ }
